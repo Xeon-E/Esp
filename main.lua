@@ -60,6 +60,9 @@ for i, v in pairs(game.Players:GetChildren()) do
         local connection
         connection = game:GetService("RunService").RenderStepped:Connect(function()
             if on and v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= player.Name and v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") ~= nil then
+                lines.Tracer.Color = Tracer_Color
+                lines.Tracer.Thickness = Tracer_Thickness
+                lines.Tracer.Transparency = Tracer_Transparency
                 local pos, vis = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
                 if vis then
                     local Scale = v.Character.Head.Size.Y/2
