@@ -5,7 +5,7 @@ local player = game:GetService("Players").LocalPlayer
 local camera = workspace.CurrentCamera
 
 --// Settings:
-_G.on = true -- Use this if your making gui
+_G.on = false -- Use this if your making gui
 
 _G.Box_Color = Color3.fromRGB(255, 0, 0)
 _G.Box_Thickness = 2
@@ -13,7 +13,7 @@ _G.Box_Transparency = 1 -- 1 Visible, 0 Not Visible
 
 _G.Autothickness = true -- Makes screen less encumbered
 
-_G.Team_Check = true
+_G.Team_Check = false
 _G.red = Color3.fromRGB(227, 52, 52)
 _G.green = Color3.fromRGB(88, 217, 24)
 
