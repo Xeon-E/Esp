@@ -320,7 +320,7 @@ end)
 while on == true do
     wait()
    for i,v in pairs(lines) do
-        if v.Thickness ~= Box_Thickness or v.Transparency = Box_Transparency then
+        if v.Thickness ~= Box_Thickness or v.Transparency ~= Box_Transparency then
             v.Thickness = Box_Thickness
             v.Transparency = Box_Transparency
         end
