@@ -321,8 +321,8 @@ while on == true do
     wait()
    for i,v in pairs(lines) do
         if v.Thickness ~= Box_Thickness or v.Transparency = Box_Transparency then
-            line.Thickness = Box_Thickness
-            line.Transparency = Box_Transparency
+            v.Thickness = Box_Thickness
+            v.Transparency = Box_Transparency
         end
     end
 end
