@@ -318,6 +318,7 @@ game.Players.PlayerAdded:Connect(function(newplr)
 end)
 
 while on == true do
+    wait()
    for i,v in pairs(lines) do
         if v.Thickness ~= Box_Thickness or v.Transparency = Box_Transparency then
             line.Thickness = Box_Thickness
